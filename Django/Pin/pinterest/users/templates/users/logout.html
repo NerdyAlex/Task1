@@ -1,0 +1,39 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+
+<body class="background relative">
+    <div class="overlay1"></div>
+    <div class=" flex w-screen h-screen items-center justify-center">
+
+
+        <div class=" bg-pink-100 w-[450px] rounded-xl shadow-2xl ">
+            <div class="px-3 flex items-center rounded-t-xl  h-[50px] bg-pink-400">
+                 <h2 class="text-white text-xl font-bold">You have been successfully logged out</h2>
+           
+            </div>
+            
+            <div class="px-5 py-3 font-xl text-gray-700">
+                <small>Wanna Login? <a class="hover:cursor-pointer text-pink-600 hover:text-pink-300" href="{% url 'login' %}">Click here</a></small>
+
+            </div>
+           
+
+        </div>
+
+    </div>
+
+</html>
+
+
+<!-- <div class="w-[100%] flex flex-col items-start">
+    
+    
+</div> -->

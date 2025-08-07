@@ -477,7 +477,7 @@ class Person:
         else:
             print("Wrong input")
 
-p = Person()
+p= Person()
 
 p.create()
 p.login()

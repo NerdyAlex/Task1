@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+
+@layer components{
+    .nav-links{
+        @apply text-[14px] font-medium mx-5 hover:cursor-pointer
+    }
+}
+
+
+@layer components {
+    .grid-box {
+        @apply columns-3 gap-4
+    }
+}
+
+@layer components {
+    .background {
+        background-image: url('/static/bg.png');
+       @apply bg-cover bg-center h-screen
+    }
+}
+
+@layer components {
+    .background2 {
+        background-image: url('/static/bg2.png');
+        @apply bg-cover bg-center h-screen
+    }
+}
+@layer components {
+    .overlay2 {
+        
+        @apply rounded-2xl bg-black opacity-0 absolute cursor-pointer
+    }
+    .overlay2:hover{
+        transition: 0.6s ease-in-out;
+        
+        @apply opacity-50
+        
+    }
+}
+
+
+@layer components {
+    .overlay1 {
+        @apply w-screen h-screen bg-black opacity-40 absolute -z-100
+    }
+}
+
+@layer components{
+    #identify input{
+        border: 1.5px solid black;
+        
+        outline: none;
+        @apply rounded h-[40px] mt-2 mb-3 focus:border-pink-600
+    }
+}
+
+@layer components {
+    #identify label {
+
+        @apply my-1
+    }
+}
+
+

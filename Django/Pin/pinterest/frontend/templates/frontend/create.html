@@ -1,0 +1,29 @@
+{%extends 'frontend/base.html'%}
+
+{% block content%}
+<div class="background2 relative h-[90vh] w-screen flex items-center justify-center">
+        <div class="w-screen h-[90vh] bg-black opacity-50 absolute z-0"></div>
+
+    <div class="z-2 shadow-gray-500 shadow bg-gray-200  h-[300px] w-[300px] rounded-xl">
+        <div class="rounded-t-xl  bg-pink-400 h-[55px] w-[100%] flex items-center px-3">
+            <p class="font-bold text-xl text-white">Create A Pin</p>
+        </div>
+        <div class=" flex flex-col items-center mt-5 px-5 py-4">
+            <form enctype="multipart/form-data" id="form">
+                <input class="text-gray-600 shadow-gray-400 text-[15px] shadow py-2  px-3 w-[250px] rounded h-[40px]" type="file" id="file">
+                <input placeholder="Enter a title" class=" text-[15px] text-gray-600 shadow-gray-400 shadow py-2 px-3 h-[40px] w-[250px] rounded  mt-8" type="text"  id="title">
+                <button class="mt-10 hover:cursor-pointer hover:bg-white hover:text-pink-400 bg-pink-400 rounded-xl text-white font-medium px-5 py-2"
+                    type="submit" >Post</button>
+            
+            </form>
+            
+        </div>
+        
+    </div>
+    
+
+
+
+
+</div>
+{% endblock content%}

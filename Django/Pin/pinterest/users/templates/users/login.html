@@ -1,0 +1,54 @@
+{%load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+
+<body class="background relative">
+    <div class="overlay1"></div>
+    <div class=" flex w-screen h-screen items-center justify-center">
+
+
+        <div class=" bg-pink-100 w-[450px] rounded-xl shadow-2xl ">
+            <div class="px-3 flex items-center rounded-t-xl  h-[50px] bg-pink-400">
+                <p class="text-white text-2xl font-bold ">Login</p>
+            </div>
+
+            <div class="px-5 py-3  w-[100%] font-medium text-gray-700">
+
+                <form id="identify" method="POST">
+                    {% csrf_token %}
+                    <div>
+
+                        {{ form|crispy }}
+                    </div>
+                    <button
+                        class="my-3 hover:bg-pink-200 hover:cursor-pointer hover:text-pink-600 bg-pink-400 rounded px-3 py-2 text-white"
+                        type="submit">Login</button>
+
+                    <div>
+                        <small>Don't have an account? <a class="hover:cursor-pointer text-pink-600 hover:text-pink-300"
+                                href="{% url 'register' %}">Sign UP</a></small>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</html>
+
+
+<!-- <div class="w-[100%] flex flex-col items-start">
+    
+    
+</div> -->

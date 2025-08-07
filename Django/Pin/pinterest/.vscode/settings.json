@@ -1,0 +1,10 @@
+{
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "django-html": "html"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "tailwindCSS.emmetCompletions": true
+}

@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do</title>
+    <link href="{% static 'css/output.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="overflow-x-hidden back py-10 flex h-screen w-screen items-center justify-center px-5">
+      <div class="pb-8 w-[500px] rounded shadow shadow-black bg-white flex flex-col h-[560px]">       
+        <div class="flex h-[50px] w-[100%] items-end rounded-t bg-green-600 px-2 py-1">
+          <p class="font-mono text-xl text-white">TO-DO LIST</p>
+        </div>
+
+        <div id="form-wrapper" >
+          <form id="form" class="mt-9 w-[100%] px-5 flex items-center">
+            <input id="title" class="pl-3 rounded border w-[80%] h-[40px] border-green-300 outline-none focus:border-green-500"
+              type="text" placeholder="Enter task">
+            <button class="rounded w-[20%] bg-btn h-[40px] text-white " type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+
+        <hr class="h-[2px] mt-9 border-0 shadow-2xl shadow-gray-900 bg-gray-400">
+        
+        <div id="list-wrapper" class="py-2 flex flex-col overflow-y-scroll gap-4 mt-7 px-5">
+          <!-- <div class="flex h-[40px] shadow ring ring-gray-300 items-center justify-between rounded-sm  border-gray-200 pl-3">
+            <p class="font-mono text-base">Do Dishes</p>
+            <button class="h-[80%] rounded  px-4 border border-green-500 text-green-600 mr-5">Edit</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/logic.js">
+    </script>
+  </body>
+</html>

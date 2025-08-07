@@ -1,0 +1,36 @@
+{%extends 'frontend/base.html'%}
+
+{% block content%}
+    <div id="wrapper" class="columns-3 lg:columns-5 gap-5 lg:gap-6 mt-16  px-5  w-full">
+        
+            <!-- <div class="edit relative  break-inside-avoid mb-5 w-[200px]">
+                        <img class="rounded-2xl w-full h-auto" src="/static/bg.png">
+                        <p>how to have a great day</p>
+                        <div class="flex justify-between items-center">
+                            <small class="font-bold">mainuser</small>
+                            <button id="btn1" class="hover:cursor-pointer hover:bg-pink-700 flex items-center justify-center  w-6 h-6 rounded-full bg-pink-400">
+                                <img class="w-[90%] " src="/static/menu.png">
+                                
+                            </button>
+                        </div>
+                        <div id="menu" class="hidden absolute left-44 w-[100px] mt-3 rounded  bg-slate-300">
+                            <ul>
+                                <li class="rounded-t hover:bg-pink-400 hover:text-white font-semibold font-mono  px-2 py-2"><a href="">Edit</a></li>
+                                <li class="rounded-b hover:bg-pink-400 hover:text-white font-semibold font-mono  px-2 py-2"><a href="">Delete</a></li>
+                                <li class="rounded-b hover:bg-pink-400 hover:text-white font-semibold font-mono  px-2 py-2"><a href="">View</a></li>
+
+                            </ul>
+                        </div>
+                    </div> -->
+    
+
+        
+
+        
+    </div>
+
+    <script>
+        const viewUrl = "{% url 'view' %}";
+    </script>
+
+{% endblock content%}

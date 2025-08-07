@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+
+    --color-btn: hsl(178.3, 100%, 38.4%);
+}
+
+@layer components {
+    .back {
+        background: linear-gradient(90deg, rgba(0, 217, 255, 0.842),
+                rgba(7, 255, 119, 0.918), rgb(144, 238, 149));
+    }
+}
